@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Saved Menu</h1>
+
+        <ul class="task-list">
+            <% for (i = 0; i < tasks.length; i++) { %>
+                <li>
+                    <%= tasks[i] %>
+                </li>
+            <% } %>
+        </ul>
+
+        <a href="/submit" class="btn btn-primary">Save Present List to Menu</a>
+    </div>
+</body>
+</html>
+
+<%- include("partials/footer.ejs") %>
